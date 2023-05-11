@@ -9,8 +9,8 @@ const app = express();
 const connectDB = require("./config/db");
 connectDB()
 
-const tasks = require("./routes/taskRoute");
-const userRoutes = require("./routes/userRoute");
+const tasks = require("./Routes/taskRoute");
+const userRoutes = require("./Routes/userRoute");
 
 // initialize middleware
 app.use(express.json({ extended: false }));
